@@ -5,9 +5,410 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    13334  
+     
+        <div id="sideNav" class="bg-dark text-white">
+            <div class="bg-dark text-center"><a class="nav-title">SEkanto</a></div>
+            <div class="bg-dark"><a class="logo d-flex">
+                <img src="images/src/12.jpg" alt="">
+                <span class="nav-item ">Shah Yusuf Ahmed Graphics Designer </span>                    
+            </a></div> 
+            <ul class="m-0 ">            
+                <a href="#"><span class="nav-item">GENERAL</span></a>                                                           
+                     
+                        <a>
+                            <i class="bi bi-speedometer2"></i> Dashboard
+                            <i class="bi bi-caret-down float-end"></i>
+                        </a>
+                        <ul>
+                            <a href="#"><i class="bi bi-circle d1"></i>Dashboard 1</a>
+                            <a href="#"><i class="bi bi-circle d2 "></i>Dashboard 2</a>
+                            <a href="#"><i class="bi bi-circle d3"></i>Dashboard 3</a>
+                            <a href="#"><i class="bi bi-circle d4"></i>Comming Soon</a>
+                        </ul>
+                     
+                        <a>
+                         <i class="bi bi-pc-display-horizontal"></i> Layouts 
+                        </a>
+                     
+                        <a>
+                          <i class="bi bi-folder2-open"></i> Pages
+                        </a>                                    
+                <a href="#"><span class="nav-item">ELEMENTS</span></a>                                     
+                       <a>
+                         <i class="bi bi-file-earmark-text"></i> Invoice
+                         <span class="badge  badge-pill  ">+</span>
+                       </a>
+                    
+                       <a>
+                         <i class="bi bi-graph-up"></i> Charts
+                       </a>
+                    
+                        <a>
+                          <i class="bi bi-soundwave"></i> Snippets
+                          <span class="badge  badge-pill  ">+</span>
+                        </a>
+                     
+                        <a>
+                          <i class="bi bi-link-45deg"></i> UI Widgets
+                          <span class="badge  badge-pill  ">+</span>
+                        </a>
+                     
+                        <a>
+                          <i class="bi bi-megaphone-fill"></i> Offers
+                        </a>
+                     
+                        <a>
+                          <i class="bi bi-pencil-fill"></i> Forms
+                        </a>
+                    
+                        <a>
+                          <i class="bi bi-bank"></i> Plugin
+                          <span class="badge  badge-pill  ">+</span>
+                        </a>
+                    
+                        <a>
+                          <i class="bi bi-envelope-fill"></i> Email
+                          <span class="badge bg-danger badge-pill rounded-circle">10</span>
+                        </a>
+                    
+                        <a>
+                          <i class="bi bi-chat-dots-fill"></i> Message
+                          <span class="badge bg-danger badge-pill rounded-circle">09</span>
+                        </a>
+                    
+                        <a>
+                          <i class="bi bi-bell"></i> notifications
+                          <span class="badge bg-danger badge-pill rounded-circle">11</span>
+                        </a>                                      
+            </ul>
+        </div>
+        
+        <div id="main">
+            <nav  class="navbar navbar-expand-lg navbar-light bg-info ">
+                <span class="btn btn-primary rounded-circle"   onclick="toggleNav()">&#9776;</span>
+                <div class="d-flex flex-row align-items-center me-auto ">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">All Site View</a></li>
+                        </ol>
+                    </nav>
+                    <div class="d-flex ms-4">
+                        <select class="form-select bg-transparent border-0" aria-label="Language">
+                            <option value="1">English</option>
+                            <option value="2">Ukrainian</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="d-flex me-3 align-items-center">
+                    <span class="me-2">Reporting Period</span>
+                    <div class="border rounded-3">
+                        <select class="form-select border-0 rounded-0" aria-label="Time Period">
+                            <option value="1">Last 30 days</option>
+                            <option value="2">Last 2 weeks</option>
+                            <option value="3">Last 3 months</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container-fluid">
+                <div class="col"> 
+                    <div class="row">
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="row mt-4 mb-4">  
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#33CCFF" viewBox="0 0 640 512">
+                                        <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/>
+                                    </svg>
+                                    <div class="col-auto mx-auto mt-2 mb-2"> 
+                                        <button class="btn btn-sm ml-2 border">Visitors</button> 
+                                    </div>
+                                    <ul class="text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#33CCFF" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+                                        </svg>
+                                        <span class="fs-5">125K</span>(50%)
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="row mt-4 mb-4">  
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="lightcoral" viewBox="0 0 512 512">
+                                            <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                        </svg>
+                                        <div class="col-auto mx-auto mt-2 mb-2 "> 
+                                            <button class="btn btn-sm ml-2 border">New Order</button> 
+                                        </div>
+                                        <ul class="text-center fs-5">
+                                            3900K
+                                        </ul>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="row mt-4 mb-4">    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="green" class="bi bi-flower3" viewBox="0 0 16 16">
+                                        <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0zM3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5zm1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12zm3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.51.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                      </svg>
+                                    <div class="col-auto mx-auto mt-2 mb-2"> 
+                                        <button class="btn btn-sm ml-2 border">Sales</button> 
+                                    </div>
+                                    <ul class="text-center fs-5">
+                                        9000K
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="row mt-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="lightcoral" class="rotate" viewBox="0 0 512 512">
+                                        <path d="M192 93.7C192 59.5 221 0 256 0c36 0 64 59.5 64 93.7l0 66.3L497.8 278.5c8.9 5.9 14.2 15.9 14.2 26.6v56.7c0 10.9-10.7 18.6-21.1 15.2L320 320v80l57.6 43.2c4 3 6.4 7.8 6.4 12.8v42c0 7.8-6.3 14-14 14c-1.3 0-2.6-.2-3.9-.5L256 480 145.9 511.5c-1.3 .4-2.6 .5-3.9 .5c-7.8 0-14-6.3-14-14V456c0-5 2.4-9.8 6.4-12.8L192 400V320L21.1 377C10.7 380.4 0 372.7 0 361.8V305.1c0-10.7 5.3-20.7 14.2-26.6L192 160V93.7z"/>
+                                    </svg>
+                                    <div class="col-auto mx-auto mt-2 mb-2"> 
+                                        <button class="btn btn-sm ml-2 border">Shipping</button> 
+                                    </div>
+                                    <ul class="text-center fs-5">
+                                        888K
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <ul class="card-body d-flex mb-0">
+                                    <ul class="justify-content-start">EARNING GRAPH OVERVIEW</ul>
+                                    <ul class="ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                            <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                        </svg>
+                                    </ul>
+                                </ul>
+                                <img  src="images/src/1.png" class="mx-2">
+                                <div class="card mb-0 rounded-0">
+                                    <ul class="card-body mx-4 mb-0 d-flex vertical-line-list"> 
+                                            <li><span class="d-flex fs-5">$13,234</span>Revenue</li>
+                                            <li class="ms-auto"><span class="d-flex fs-5">2,35,090</span>Order</li>
+                                            <li class="ms-auto"><span class="d-flex fs-5">$1,34,900</span>Tax</li>
+                                            <li class="ms-auto"><span class="d-flex fs-5">$1,134</span>Shipment</li>    
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="shadow-sm card rounded-0 ">
+                                
+                                <div class="card mb-0 rounded-0">
+                                    <table class="table table-bordered mb-0">
+                                        <thead>
+                                            <ul class="card-body  d-flex mb-0">
+                                                <select class="form-select form-select-sm bg-transparent border-0 custom-width">
+                                                    <option value="1">TOP SEARCH</option>
+                                                </select>
+                                                <div class="col d-flex justify-content-end">
+                                                    <ul class="ms-auto ">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                                            <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                                            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                                        </svg>
+                                                    </ul>
+                                                </div>
+                                            </ul>
+                                        </thead>
+                                        <tbody >
+                                          <tr>
+                                            <th scope="row" class="text-center">01</th>
+                                            <td class="text-end">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress rounded-0 flex-grow-1">
+                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        
+                                                    </div>
+                                                    <ul class="text-center"><span class="d-flex fs-5 ">America</span><strong>90%</strong></ul>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-center">02</th>
+                                            <td class="text-end">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress rounded-0  flex-grow-1">
+                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <ul class="text-center"><span class="d-flex fs-5">U.Kingdom</span><strong>60%</strong></ul>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-center">03</th>
+                                            <td class="text-end">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress rounded-0  flex-grow-1">
+                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 18%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <ul class="text-center"><span class="d-flex fs-5">Bangladesh</span><strong>18%</strong></ul>
+                                                </div>
+                                            </td>                                          
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-center ">04</th>
+                                            <td class="text-end">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress rounded-0  flex-grow-1">
+                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <ul class="text-center"><span class="d-flex fs-5">Canada</span><strong>85%</strong></ul>
+                                                </div>
+                                            </td>                                            
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" class="text-center">05</th>
+                                            <td class="text-end">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="progress rounded-0  flex-grow-1">
+                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%"  aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <ul class="text-center"><span class="d-flex fs-5">Russia</span><strong>70%</strong></ul>
+                                                </div>
+                                            </td>                                                
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="border">   
+                                    <ul class="card-body d-flex mb-0">
+                                        <ul class="justify-content-start ">CUSTOM RATEING</ul>
+                                        <ul class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                                <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                                <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                            </svg>
+                                        </ul>
+                                    </ul>
+                                </div> 
+                                <div class="row mx-1">
+                                    <img src="images/src/3.png" class="img-fluid mb-4 mt-4 border">
+                                    <ul class="mx-2 text-section">
+                                        <li>The product is awesome<strong class="float-end" >  20%</strong></li>
+                                        <li>I am satisfied with this<strong class="float-end" >  40%</strong></li>
+                                        <li>Not bad but good also<strong class="float-end" >  60%</strong></li>
+                                        <li>Average product<strong class="float-end" >  80%</strong></li>
+                                        <li>Not useful at all<strong class="float-end" > 100%</strong></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="border">
+                                    <ul class="card-body d-flex mb-0">                                            
+                                        <ul class="justify-content-start">
+                                            <select class="form-select form-select-sm bg-transparent border-0  custom-width">
+                                                <option value="1">RECENT ORDER</option>
+                                            </select>
+                                        </ul>
+                                        <ul class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                                <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                                <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                            </svg>
+                                        </ul>                                                                                                                       
+                                    </ul>                                    
+                                </div>                        
+                                <img  src="images/src/4.png" class="img-fluid">                                  
+                            </div>
+                        </div>                           
+                    </div>
+                    <div class="row  ">
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="border">   
+                                    <ul class="card-body d-flex mb-0">
+                                        <ul class="justify-content-start">SITE VISITS</ul>
+                                        <ul class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                                <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                                <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                            </svg>
+                                        </ul>
+                                    </ul>
+                                </div> 
+                                <img  src="images/src/5.png" class="img-fluid" >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="shadow-sm card rounded-0">
+                                <div class="border">   
+                                    <ul class="card-body d-flex mb-0">
+                                        <ul class="justify-content-start">REGION-WISE SALES</ul>
+                                        <ul class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2 rotated" viewBox="0 0 512 512">
+                                                <path d="M386.3 160H336c-17.7 0-32 14.3-32 32s14.3 32 32 32H464c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32s-32 14.3-32 32v51.2L414.4 97.6c-87.5-87.5-229.3-87.5-316.8 0s-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3s163.8-62.5 226.3 0L386.3 160z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 448 512">
+                                                <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="me-2" viewBox="0 0 384 512">
+                                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                                            </svg>
+                                        </ul>
+                                    </ul>
+                                </div> 
+                                <img  src="images/src/6.png" class="img-fluid" >
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    
     <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
