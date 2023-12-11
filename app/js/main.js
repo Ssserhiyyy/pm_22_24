@@ -11,3 +11,7 @@ function toggleNav() {
         main.style.marginLeft = "250px";
     }
 }
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-theme');
+}

@@ -9,8 +9,16 @@
  
  body {
    overflow-x: hidden;
+   transition: background-color 0.5s ease;
  }
- 
+ .theme-toggle{
+   position: fixed;
+   cursor: pointer;
+ }
+ .dark-theme {
+   background-color: black;
+   color: white;
+}
  .logo {
    background: linear-gradient(to bottom, aquamarine, blueviolet);
    margin-bottom: 5px;
